@@ -23,17 +23,17 @@ export default [
       },
     ],
     plugins: [
-      terser(),
       resolve(),
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss(), 
+      terser(),
     ],
   },
   {
     input: "dist/esm/types/src/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [dts()],
-    external: [/\.(sc|sa|c)ss$/],
+    external: [/\.css$/],
   },
 ];
