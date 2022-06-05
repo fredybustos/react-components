@@ -3,6 +3,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import postcss from "rollup-plugin-postcss";
+import babel from '@rollup/plugin-babel';
 import { terser } from "rollup-plugin-terser";
 
 const packageJson = require("./package.json");
@@ -28,6 +29,7 @@ export default [
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss(), 
       terser(),
+      babel({ babelHelpers: 'bundled' })
     ],
   },
   {
