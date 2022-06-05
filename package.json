@@ -1,6 +1,6 @@
 {
   "name": "@fredybustos/react-components",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "",
   "scripts": {
     "dev": "rollup -c -w",
