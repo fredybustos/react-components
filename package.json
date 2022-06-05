@@ -1,6 +1,6 @@
 {
   "name": "@fredybustos/react-components",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "scripts": {
     "dev": "rollup -c -w",
@@ -23,6 +23,7 @@
     "rollup-plugin-dts": "^4.2.2",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.4.0",
     "typescript": "^4.7.2"
   },
   "peerDependencies": {
