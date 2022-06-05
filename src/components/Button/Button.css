@@ -1,4 +1,7 @@
 button {
-  font-size: 60px;
-  background: green;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background: whitesmoke;
+  border: 1px solid #ccc;
 }
