@@ -3,9 +3,8 @@
   "version": "1.0.1",
   "description": "",
   "scripts": {
-    "rollup": "rollup -c",
     "dev": "rollup -c -w",
-    "build": "rollup -c --environment NODE_ENV:development"
+    "build": "rollup -c"
   },
   "author": "Fredy Bustos",
   "license": "ISC",
