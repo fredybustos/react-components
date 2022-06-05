@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "dev": "rollup -c -w",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "lint": "eslint -c .eslintrc.json . --ext .ts,tsx,js,jsx --fix"
   },
   "author": "Fredy Bustos",
   "license": "ISC",
@@ -19,8 +20,15 @@
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.2",
     "@types/react": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
     "node-sass": "^7.0.1",
     "postcss": "^8.4.14",
+    "prettier": "2.6.2",
     "react": "^18.1.0",
     "rollup": "^2.75.5",
     "rollup-plugin-dts": "^4.2.2",
@@ -38,5 +46,6 @@
   "files": [
     "dist"
   ],
+  "eslintIgnore": ["node_modules", "dist"],
   "types": "dist/index.d.ts"
 }
