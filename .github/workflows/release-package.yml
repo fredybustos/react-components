@@ -16,7 +16,7 @@ jobs:
       - run: npm test
 
   publish-gpr:
-    needs: build
+    needs: [build]
     runs-on: ubuntu-20.04
     permissions:
       packages: write
@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 12
+          node-version: '14'
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
       - run: npm run build
