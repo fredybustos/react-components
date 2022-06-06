@@ -1,6 +1,6 @@
 {
   "name": "@fredybustos/react-components",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "",
   "scripts": {
     "dev": "rollup -c -w",
@@ -46,6 +46,9 @@
   "files": [
     "dist"
   ],
-  "eslintIgnore": ["node_modules", "dist"],
+  "eslintIgnore": [
+    "node_modules",
+    "dist"
+  ],
   "types": "dist/index.d.ts"
 }
