@@ -1,0 +1,60 @@
+.button {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.default {
+  background: #ccc;
+  color: #000;
+}
+
+.primary {
+  background: cornflowerblue;
+  color: #fff;
+}
+
+.secondary {
+  background:darkcyan;
+  color: #fff;
+}
+
+.outline-primary {
+  background: transparent;
+  color: cornflowerblue;
+  border: 1px solid cornflowerblue;
+}
+
+.outline-secondary {
+  background: transparent;
+  color: darkcyan;
+  border: 1px solid darkcyan;
+}
+
+.danger {
+  background:firebrick;
+  color: #fff;
+}
+
+.text {
+  background: transparent;
+  color: #000;
+}
+
+.cancel {
+  background: transparent;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.default:hover,
+.primary:hover,
+.secondary:hover,
+.outline-primary:hover,
+.outline-secondary:hover,
+.danger:hover {
+  opacity: 0.8;
+}
